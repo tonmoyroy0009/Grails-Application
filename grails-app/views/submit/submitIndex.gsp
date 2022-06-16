@@ -16,13 +16,13 @@
 <div id = 'all'>
     <h2>Address Book</h2>
 
-    <g:form controller="SubmitController"  action="listPerson.gsp">
-        Person ID:
-        <g:textField name="personId" maxlength="100"></g:textField>
-        <br>
-        <br>
+    <g:form controller="Submit"  action="postMethod">
         Person Name:
         <g:textField name="personName" maxlength="100"></g:textField>
+        <br>
+        <br>
+        Person Mobile:
+        <g:textField name="mobileNo" maxlength="100"></g:textField>
         <br>
         <br>
         <input type="submit" value="Submit">

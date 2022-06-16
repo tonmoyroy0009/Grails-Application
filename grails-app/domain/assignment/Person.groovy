@@ -1,12 +1,14 @@
 package assignment
 
+import java.awt.TextArea
+
 class Person {
-    Integer personID
     String personName
+    String mobileNo
 
 
     static constraints = {
-        personID maxSize: 100
         personName maxSize: 100
+        mobileNo maxSize: 100
     }
 }

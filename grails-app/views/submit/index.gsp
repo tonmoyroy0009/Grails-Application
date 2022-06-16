@@ -17,22 +17,22 @@
     <table border="1">
         <thead>
         <tr>
-            <th>Person ID</th>
             <th>Person Name</th>
+            <th>Mobile</th>
         </tr>
         </thead>
     </table>
     <tbody>
-    <g:each in="${person}" status="i" var="thisPerson">
+    <g:each in="${persons}" status="i" var="thisPerson">
     <tr>
-        <th>${thisPerson.personId}</th>
         <th>${thisPerson.personName}</th>
+        <th>${thisPerson.mobileNo}</th>
     </tr>
     </g:each>
     </tbody>
-    <g:form controller="submit" action="submitIndex">
-        <input value="Submit again" type="submit"/>
-    </g:form>
+%{--    <g:form controller="submit" action="submitIndex">--}%
+%{--        <input value="Submit again" type="submit"/>--}%
+%{--    </g:form>--}%
 </div>
 
 </body>
