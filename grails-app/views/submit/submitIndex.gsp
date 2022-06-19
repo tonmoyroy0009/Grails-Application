@@ -13,7 +13,7 @@
 
 <body>
 
-<div id = 'all'>
+<div>
     <h2>Address Book</h2>
 
     <g:form controller="Submit"  action="postMethod">
@@ -23,6 +23,10 @@
         <br>
         Person Mobile:
         <g:textField name="mobileNo" maxlength="100"></g:textField>
+        <br>
+        <br>
+        Address:
+        <g:textField name="address" maxlength="100"></g:textField>
         <br>
         <br>
         <input type="submit" value="Submit">

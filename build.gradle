@@ -58,6 +58,7 @@ dependencies {
     implementation "org.grails.plugins:events"
     implementation "org.grails.plugins:gsp"
     implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.2'
+    implementation "org.grails.plugins:spring-security-core:4.0.0.RC2"
     profile "org.grails.profiles:web"
     runtimeOnly "org.glassfish.web:el-impl:2.2.1-b05"
     runtimeOnly "com.h2database:h2"

@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<div id = 'all'>
+<div>
     <table border="1">
         <thead>
         <tr>
@@ -21,19 +21,17 @@
             <th>Mobile</th>
         </tr>
         </thead>
+        <tbody>
+        <g:each in="${persons}" status="i" var="thisPerson">
+            <tr>
+                <th>${thisPerson.personName}</th>
+                <th>${thisPerson.mobileNo}</th>
+            </tr>
+        </g:each>
+        </tbody>
     </table>
-    <tbody>
-    <g:each in="${persons}" status="i" var="thisPerson">
-    <tr>
-        <th>${thisPerson.personName}</th>
-        <th>${thisPerson.mobileNo}</th>
-    </tr>
-    </g:each>
-    </tbody>
-%{--    <g:form controller="submit" action="submitIndex">--}%
-%{--        <input value="Submit again" type="submit"/>--}%
-%{--    </g:form>--}%
 </div>
-
+<br></br>
+<button onclick="window.location.href='/submit/submitIndex'">Go to submit page</button>
 </body>
 </html>
